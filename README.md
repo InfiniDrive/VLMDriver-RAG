@@ -1,16 +1,15 @@
-# VLADriver-RAG: Retrieval-Augmented Vision-Language-Action Models for Autonomous Driving
+# VLMDriver-RAG: Retrieval-Augmented Vision-Language-Model for Autonomous Driving
+
+**VLMDriver-RAG** is a structure-aware retrieval-augmented framework that uses historical driving scenarios to support path and speed planning.
 
 <p align="center">
-  <b>VLADriver-RAG</b> is a retrieval-augmented Vision-Language-Action framework for autonomous driving, designed to enhance planning robustness through structure-aware historical scenario retrieval.
+  <a href="https://infinidrive.github.io/VLMDriver-RAG/">Project Page</a> •
+  <a href="https://github.com/InfiniDrive/VLMDriver-RAG">GitHub</a>
 </p>
 
-<p align="center">
-  <a href="https://infinidrive.github.io/VLADriver-RAG/">Project Page</a> •
-  <a href="https://arxiv.org/abs/2605.08133">arXiv</a> •
-</p>
 
 <p align="center">
-  <img src="assets/overview.png" width="80%">
+  <img src="assets/overview.png" width="80%" alt="Overall framework with Visual-to-Scenario, Scenario-Aligned Embedding, and multimodal planning">
 </p>
 
 ## News
@@ -18,37 +17,30 @@
 - **[2026/05/07]** 🌐 Project page is live: [Project](https://infinidrive.github.io/VLADriver-RAG/).
 - **[2026/05/12]** 👉 We released our paper on [arXiv](https://arxiv.org/abs/2605.08133).
 
----
-
-
 ## Visualization
+
 <p align="center">
-  <img src="docs/assets/vis1.png" width="80%">
+  <img src="docs/assets/vis1.png" width="100%" alt="Hazard at Side Lane: SimLingo and VLMDriver-RAG avoiding a cyclist">
 </p>
-            In challenging corner-case driving scenarios, the baseline often produces unstable or unsafe planning results,
-            whereas <b>VLADriver-RAG (b)</b> is able to generate a safer and more reliable trajectory. These qualitative results
-            demonstrate that retrieved historical knowledge effectively improves planning robustness and decision stability
-            under uncertain environments.
-            
----
 
-## Quick start
+Historical guidance supports reducing speed, maintaining clearance, and safely passing a cyclist in the Hazard at Side Lane scenario.
 
- <p>
- Coming soon
- </p>
+<p align="center">
+  <img src="docs/assets/vis2.png" width="100%" alt="Unsignalized Junction: SimLingo and VLMDriver-RAG turning left with oncoming traffic">
+</p>
 
----
+At an Unsignalized Junction, retrieved scenarios guide yielding to oncoming traffic before turning left. Both figures compare (a) SimLingo with (b) VLMDriver-RAG.
 
 ## Citation
+
+The following citation refers to the revised manuscript supplied here; the earlier arXiv version is linked above.
+
 ```bibtex
-@misc{zhao2026vladriverragretrievalaugmentedvisionlanguageactionmodels,
-      title={VLADriver-RAG: Retrieval-Augmented Vision-Language-Action Models for Autonomous Driving}, 
-      author={Rui Zhao and Haofeng Hu and Zhenhai Gao and Jiaqiao Liu and Gao Fei},
-      year={2026},
-      eprint={2605.08133},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2605.08133}, 
+@misc{zhao2026vlmdriverrag,
+  title={VLMDriver-RAG: Retrieval-Augmented Vision-Language-Model for Autonomous Driving},
+  author={Rui Zhao and Haofeng Hu and Zhenhai Gao and Jiaqiao Liu and Fei Gao},
+  year={2026},
+  note={Revised manuscript},
+  url={https://github.com/InfiniDrive/VLMDriver-RAG}
 }
 ```
