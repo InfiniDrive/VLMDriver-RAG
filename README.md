@@ -16,6 +16,7 @@
 
 - **[2026/05/07]** 🌐 Project page is live: [Project](https://infinidrive.github.io/VLADriver-RAG/).
 - **[2026/05/12]** 👉 We released our paper on [arXiv](https://arxiv.org/abs/2605.08133).
+- **[2026/11/04]** 🔄 We renamed our model from **VLADriver-RAG** to **VLMDriver-RAG**.
 
 ## Visualization
 
@@ -30,6 +31,10 @@ Historical guidance supports reducing speed, maintaining clearance, and safely p
 </p>
 
 At an Unsignalized Junction, retrieved scenarios guide yielding to oncoming traffic before turning left. Both figures compare (a) SimLingo with (b) VLMDriver-RAG.
+
+## quick start
+
+Coming soon! We will release the code and quick start instructions after the paper is accepted.
 
 ## Citation
 
